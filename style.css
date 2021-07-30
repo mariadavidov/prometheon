@@ -1,0 +1,63 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#topwindow {
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  position: absolute;
+
+}
+
+#bottomwindow {
+  bottom: 0;
+  left: 0;
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+#infobox {
+  width:21%;
+  max-height: 48%;
+  background-color: #000;
+  color: #ffe5ac;
+  position: absolute;
+  top: 30%;
+  left: 38.5%;
+  padding:1%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family:bitfont; 
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.infobox::-webkit-scrollbar {
+  display: none;
+}
+
+#search {
+  width: 12%;
+  height: 5%;
+  top:11%;
+  left: 43.5%;
+  padding:5px;
+  position: absolute;
+}
+
+
+
+@font-face {
+  font-family: bitfont;
+  src: url(bitfont.ttf);
+}
+
+p {
+  color:#fff;
+}

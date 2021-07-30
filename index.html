@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prometheon</title>
+    <script src="/matrix.js"></script>
+    <script src="/data.js"></script>
+    <script src="/reader.js"></script>
+    <script src="/logic.js"></script>
+  </head>
+  <body onload="init()">
+    <canvas id="bg"></canvas>
+
+    <div id="topwindow">
+      <img src="topwindow.png" style="width:100%" >
+      
+    </div>
+
+    <div id="bottomwindow">
+       <img src="bottomwindow.png" style="position: absolute; width:100%; margin-top:-10px;">
+       <div id="search"><input onkeyup="getTagsBySearch()" id="searchInput" value="search" style="width:100%; background-color:#fff; border:none; font-size: 15px; font-family:bitfont; text-transform: uppercase;"></div>
+       <div id="infobox" class="infobox">
+        <p id="starttext" style="font-size:17px;">Captain, we have arrived at the Prometheon solar system. <br/>
+          Just as the company suspected, I cannot detect any signs of life. <br/> <br/>
+          There are high levels of Iridium in the atmospheres around the planets, even the artificial onens we created. Doctor Pand and the rest of the team’s comms are unresponsive as well, but I am detecting various signals coming from the official company wavelength.
+          <br/> <br/> It appears we will have to conduct our investigation by hand, but I'm afraid the Iridium in the air will prevent us from traveling directly to the planets. I have downloaded all of the signals into our database -
+          just search any keyword and it will give you all of the files containing what you’re looking for.</p>
+        <div id="tagsmenu">  </div>
+
+<div id="postsmenu">  </div>
+<div id="current" style="display:none">  
+</div>
+<div id="content" style="display:none"> 
+	<div id="contentDiv" style="color:#fff;">
+    
+	<iframe width="100%" height="50%"   frameBorder="0" id="contentframe" style="display: block; overflow: hidden; color:#fff;">	</iframe>
+	</div>
+	<div style="display: block" class='more' id="more" onclick="more()">	</div>
+	<div style="display: inline" id="tagpostmenu">	</div>
+</div></div>
+      </div>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+
+
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	font-family: Arial;
+	font-size: 15pt;
+}
+
+div {
+	text-align: center;
+	direction: rtl;
+	border-radius: 5px;
+}
+
+.nothingtext {
+	font-family: Arial;
+	font-size: 18pt;
+	background: rgb(200, 200, 200);
+	color: black;
+	margin-top:100px;
+	margin-bottom:100px;
+
+}
+
+#header {
+	font-family: Arial;
+	font-size: 48pt;
+	background: rgb(48, 48, 48);
+	color: black;
+	margin-bottom:30px;
+	cursor: pointer;
+}
+.topics, .more {
+	font-family: Arial;
+	font-size: 18pt;
+	background: rgb(200, 200, 200);
+	color: black;
+	cursor: pointer;
+}
+
+.tags, .moretags{
+	font-family: Arial;
+	font-size: 16pt;
+	background: rgb(220, 220, 220);
+	color: black;
+	cursor: pointer;
+}
+
+.posts {
+	font-family: Arial;
+	font-size: 16pt;
+	background: rgb(200, 200, 200);
+	color: black;
+	cursor: pointer;
+}
+
+#menu, #tagsmenu, #postsmenu {
+	margin-bottom:30px;
+}
+
+#contentframediv {
+	min-width:400px;
+	min-height:400px;
+	text-align: center;
+}
+
+#tagpostmenu {
+	margin-top:30px;
+	margin-bottom:10px;
+}
+
+#more {	
+	margin: auto;	
+	margin-bottom:20px;
+	text-align:center;
+	width: 100px;
+}
